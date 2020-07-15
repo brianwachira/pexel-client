@@ -12,7 +12,7 @@ $(document).ready(function(){
     $(".images").append(`<div class="col-md-3">
     <figure class='figure'>
       <img src=${ photoObject.src.portrait }  class="img-fluid rounded" id=${ photoObject.photographer_id }>
-      <figcaption class="figure-caption">Photographer : <a href=${ photoObject.photographer_url } target="_blank">${ photoObject.photographer }</a></figcaption> <a href=""></a>
+      <figcaption class="figure-caption text-center">Photographer : <a href=${ photoObject.photographer_url } target="_blank">${ photoObject.photographer }</a></figcaption> <a href=""></a>
     </figure></div>`);
   }
 

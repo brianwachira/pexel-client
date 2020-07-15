@@ -14,6 +14,15 @@ $(document).ready(function(){
     const photoResponse = await pexelService.getPictures("nature");
 
     console.log(photoResponse.photos);
+
+
+    photoResponse.photos.forEach(function(photo){
+
+      
+
+      
+      $(".images").append(`<div class="col-md-4"><img src=${ photo.src.portrait }  class="img-fluid"></div>`);
+    });
   })();
 
 });

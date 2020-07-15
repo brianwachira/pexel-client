@@ -18,10 +18,10 @@ npm install
 npm run lint
 ```
 
-### Get your api key from the link below
-[here](https://www.pexels.com/api/new/)
+### Get your pexel api key from the link below
+[Get pexels API here](https://www.pexels.com/api/new/)
 
-### Create a .env file in the root directory of the project to save your API KEY. Use the format below
+### Create an .env file in the root directory of the project to save your API KEY. Use the format below
 .env
 ```
 API_KEY=API KEY GOES HERE 

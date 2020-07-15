@@ -8,21 +8,36 @@ import {PexelService} from './js/pexels-service.js';
 
 $(document).ready(function(){
 
-  
-  (async () => {
-    let pexelService = new PexelService();
-    const photoResponse = await pexelService.getPictures("nature");
+  function displayImages(photoObject){
+    $(".images").append(`<div class="col-md-3">
+    <figure class='figure'>
+      <img src=${ photoObject.src.portrait }  class="img-fluid rounded" id=${ photoObject.photographer_id }>
+      <figcaption class="figure-caption">Photographer : <a href=${ photoObject.photographer_url } target="_blank">${ photoObject.photographer }</a></figcaption> <a href=""></a>
+    </figure></div>`);
+  }
 
-    console.log(photoResponse.photos);
+  function styleUpSearchBar(){
+    $("#row").removeClass("vh-100");
+    $("#row").addClass("pt-4");
+  }
+
+  $("form#get-images").submit(function(){
+    
+    event.preventDefault();
+
+    const requestedImage = $("input#searchText").val();
+    (async () => {
+      let pexelService = new PexelService();
+      const photoResponse = await pexelService.getPictures(requestedImage);
+
+      photoResponse.photos.forEach(function(photo){
+
+        displayImages(photo);
+      });
+      styleUpSearchBar();
+      //$("#col").removeClass("justify-content-center");
 
 
-    photoResponse.photos.forEach(function(photo){
-
-      
-
-      
-      $(".images").append(`<div class="col-md-4"><img src=${ photo.src.portrait }  class="img-fluid"></div>`);
-    });
-  })();
-
+    })();
+  });
 });

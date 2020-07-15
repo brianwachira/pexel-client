@@ -9,7 +9,7 @@ export class PexelService{
   
     const query = topic;
   
-    await client.photos.search({ query, per_page: 5 }).then(photoResponse => {
+    await client.photos.search({ query, per_page: 16 }).then(photoResponse => {
       jsonifiedResponse = photoResponse;
     });
 

@@ -54,4 +54,4 @@ If you have any issues,ideas or concerns contact me on<a href="https://mail.goog
 ### License
 This project is licensed under the terms of the **MIT** license.
 
->You can check out the full license [here](https://github.com/brianwachira/pexels-client/blob/master/LICENSE.md)  
+>You can check out the full license [here](https://github.com/brianwachira/pexel-client/blob/master/LICENSE.md)  

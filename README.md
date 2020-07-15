@@ -1,4 +1,4 @@
-# Tamagochi 
+# Pexel-Client
 #### By **Brian Wachira**
 ## Description
 simple page to load images from pexels api. A user enters the number of results they expect with the image they want to search for and voila!! that's just what they get. 
@@ -18,10 +18,10 @@ npm install
 npm run lint
 ```
 
-### Get your api key from the link below
-[here](https://www.pexels.com/api/new/)
+### Get your pexel api key from the link below
+[Get pexels API here](https://www.pexels.com/api/new/)
 
-### Create a .env file in the root directory of the project to save your API KEY. Use the format below
+### Create an .env file in the root directory of the project to save your API KEY. Use the format below
 .env
 ```
 API_KEY=API KEY GOES HERE 
@@ -39,7 +39,7 @@ npm run build
 ```
 
 ## Link to live site
-Still in Development :grimacing:
+Will share once I host :grimacing:
 
 ## Technologies Used
 Webpack<br/>

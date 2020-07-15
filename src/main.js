@@ -26,18 +26,16 @@ $(document).ready(function(){
     event.preventDefault();
 
     const requestedImage = $("input#searchText").val();
+    const numOfResults = $("input#numOfResults").val();
     (async () => {
       let pexelService = new PexelService();
-      const photoResponse = await pexelService.getPictures(requestedImage);
+      const photoResponse = await pexelService.getPictures(requestedImage,numOfResults);
 
       photoResponse.photos.forEach(function(photo){
 
         displayImages(photo);
       });
       styleUpSearchBar();
-      //$("#col").removeClass("justify-content-center");
-
-
     })();
   });
 });

@@ -1,9 +1,19 @@
 import { createClient } from 'pexels';
 
-const client = createClient(process.env.API_KEY);
+export class PexelService{
 
-const query = 'Nature';
+  async getPictures(topic){
 
-client.photos.search({ query, per_page: 1 }).then(photo => {
-  console.log(photog);
-});
+    let jsonifiedResponse;
+    const client = createClient(process.env.API_KEY);
+  
+    const query = topic;
+  
+    await client.photos.search({ query, per_page: 5 }).then(photoResponse => {
+      jsonifiedResponse = photoResponse;
+    });
+
+    return jsonifiedResponse;
+  }
+  
+}

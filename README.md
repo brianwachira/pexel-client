@@ -1,4 +1,4 @@
-# Pexel-Client
+# Pexels-Client
 #### By **Brian Wachira**
 ## Description
 simple page to load images from pexels api. A user enters the number of results they expect with the image they want to search for and voila!! that's just what they get. 
@@ -39,7 +39,7 @@ npm run build
 ```
 
 ## Link to live site
-Will share once I host :grimacing:
+https://pexels-client.netlify.app/
 
 ## Technologies Used
 Webpack<br/>

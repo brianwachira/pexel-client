@@ -11,8 +11,8 @@ $(document).ready(function(){
   function displayImages(photoObject){
     $(".images").append(`<div class="col-md-3 imagesDisplayed">
     <figure class='figure'>
-      <img src=${ photoObject.src.portrait }  class="img-fluid rounded" id=${ photoObject.photographer_id }>
-      <figcaption class="figure-caption text-center">Photographer : <a href=${ photoObject.photographer_url } target="_blank">${ photoObject.photographer }</a></figcaption> <a href=""></a>
+      <img src=${ photoObject.src.portrait }  class="img-fluid  img-thumbnail bg-dark rounded" id=${ photoObject.photographer_id } alt='search results'>
+      <figcaption class="figure-caption text-center">Photographer : <a href=${ photoObject.photographer_url } target="_blank" class="text-dark">${ photoObject.photographer }</a></figcaption> <a href=""></a>
     </figure></div>`);
   }
 

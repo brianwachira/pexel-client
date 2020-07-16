@@ -21,7 +21,9 @@ module.exports = {
       template : './src/index.html',
       inject : 'body'
     }),
-    new Dotenv()
+    new Dotenv({
+      systemvars: true
+    })
   ],
   module : {
     rules : [
